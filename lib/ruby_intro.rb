@@ -3,7 +3,12 @@
 # Part 1
 
 def sum arr
-  return 0
+    return 0 if arr.empty?
+    total = 0
+    arr.each do |x|
+        total += x
+    end
+    total
 end
 
 def max_2_sum arr
